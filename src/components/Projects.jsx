@@ -65,7 +65,7 @@ const Projects = () => {
         </button>
       </div>
       {/** project slider container */}
-      <div className="overflow-hidden">
+      <div className="w-550 overflow-hidden">
         <div
           className="flex gap-8 transition-transform duration-500 ease-in-out"
           style={{
