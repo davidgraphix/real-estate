@@ -21,7 +21,11 @@ const Contact = () => {
         Ready to make a Move? Let's Build Your Future Together
       </p>
 
-      <form className="max-2xl\ mx-auto text-gray-600 pt-8">
+      <form
+        action="https://formsubmit.co/bamideledavidsmart40@gmail.com"
+        method="POST"
+        className="max-2xl\ mx-auto text-gray-600 pt-8"
+      >
         <div className="flex flex-wrap">
           <div className="w-full md:w-1/2 text-left">
             {" "}
@@ -55,7 +59,19 @@ const Contact = () => {
             required
           ></textarea>
         </div>
-        <button className="bg-blue-600 text-white py-2 px-12 mb-10 rounded">
+        <input
+          type="hidden"
+          name="_autoresponse"
+          value="Thanks! Your message has been recieved"
+        ></input>
+        <input
+          type="hidden"
+          name="_next"
+          value="https://davvidsmartrealestate.netlify.app/"
+        />
+
+        <input type="hidden" name="_captcha" value="false" />
+        <button className="bg-blue-600 text-white py-2 px-12 mb-10 rounded cursor-pointer hover:bg-blue-900">
           Send Message
         </button>
       </form>
